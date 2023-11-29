@@ -1,225 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>E-Book - Receitas Natalias e de Ano Novo | Rebeca Lima</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap"
-            rel="stylesheet"
-        />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="assets/js/tailwind.js"></script>
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <link
-            rel="shortcut icon"
-            href="assets/img/thumb.png"
-            type="image/png"
-        />
-    </head>
-    <body class="bg-brand-white text-brand-black">
-        <main class="flex flex-col items-center gap-8 w-full">
-            <section
-                class="bg-brand-pink w-full h-full flex justify-center text-brand-white"
-            >
-                <div class="flex flex-col items-start gap-4 max-w-2xl py-16">
-                    <div class="logo">
-                        <img
-                            class="w-[200px]"
-                            src="assets/img/logo-rebeca.svg"
-                            alt="Logo Rebeca Lima"
-                        />
-                    </div>
-                    <h1
-                        class="font-extrabold text-5xl text-center md:text-left"
-                    >
-                        Desperte o sabor escondido das festas de final de ano
-                    </h1>
-                    <p class="text-center">
-                        Seja bem-vindo ao meu guia para
-                        <span class="underline">
-                            celebrações gastronômicas inesquecíveis!
-                        </span>
-                    </p>
-                    <p>
-                        Apresento a você o e-book de receitas de festas de final
-                        de ano.
-                    </p>
-                    <p>
-                        Uma obra cuidadosamente elaborada por uma
-                        <span class="underline">
-                            Nutricionista e Chef de Cozinha
-                        </span>
-                        apaixonada por criar experiências culinárias memoráveis.
-                    </p>
-                    <button
-                        class="bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
-                    >
-                        QUERO O GUIA AGORA
-                    </button>
-                </div>
-                <div
-                    class="w-[300px] flex items-center justify-center relative"
-                >
-                    <div
-                        class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-brand-pink from-30% to-brand-transparent"
-                    ></div>
-                    <img src="assets/img/rebeca.png" alt="Rebeca Lima" />
-                </div>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>E-Book - Receitas Natalias e de Ano Novo | Rebeca Lima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-            <section
-                class="w-full flex flex-col justify-center items-center gap-8 p-4"
-            >
-                <div class="flex">
-                    <img
-                        src="assets/img/book.png"
-                        alt="Mockup ebook Rebeca Lima"
-                    />
-                </div>
-                <div class="flex flex-col justify-center items-center gap-4">
-                    <h2 class="font-extrabold text-3xl text-center">
-                        Por que este Ebook é essencial para suas festas?
-                    </h2>
-                    <div
-                        class="flex flex-col justify-center items-center gap-4"
-                    >
-                        <p class="text-center">
-                            Explore a combinação perfeita entre nutrição e
-                            sabor, desenvolvida por uma profissional experiente.
-                        </p>
-                        <p class="text-center">
-                            Surpreenda seus convidados com pratos refinados e
-                            equilibrados, criados para encantar paladares
-                            exigentes.
-                        </p>
-                        <p class="text-center">
-                            Transforme suas celebrações em experiências
-                            memoráveis, onde cada receita conta uma história de
-                            amor pela culinária.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                class="w-full flex flex-col justify-center items-center gap-8 p-4"
-            >
-                <h2 class="font-extrabold text-3xl text-center">
-                    O que há no E-Book?
-                </h2>
-                <p>10 Receitas de Natal</p>
-                <p>10 Receitas de Ano Novo</p>
-                <div class="content">
-                    <h3 class="font-extrabold text-xl text-center">
-                        Estrutura de receitas
-                    </h3>
-                    <ul class="text-center">
-                        <li>2 entradas</li>
-                        <li>2 acompanhamentos</li>
-                        <li>2 pratos principais</li>
-                        <li>2 saladas</li>
-                        <li>1 sobremesas</li>
-                        <li>1 bebidas</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section
-                class="w-full flex flex-col-reverse justify-center items-center gap-8 p-4"
-            >
-                Valor
-            </section>
-
-            <section
-                class="w-full flex flex-col-reverse justify-center items-center gap-8 p-4"
-            >
-                <h2 class="font-extrabold text-3xl text-center">
-                    Pra quem é o ebook?
-                </h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
-
-            <section
-                class="w-full flex flex-col-reverse justify-center items-center gap-8 p-4"
-            >
-                <h2 class="font-extrabold text-3xl text-center">
-                    O que você vai conquistar se adquirir o e-book agora?
-                </h2>
-            </section>
-
-            <section
-                class="w-full flex flex-col justify-center items-center gap-8 p-4"
-            >
-                <h2 class="font-extrabold text-3xl text-center">
-                    Quanto você precisará investir?
-                </h2>
-                <p>
-                    Adquira agora mesmo o e-book "Título do ebook" e comece sua
-                    jornada de sucesso na cozinha ainda hoje.
-                </p>
-                <span>separetor</span>
-                <p>Oferta exclusiva de R$ 97 por apenas R$ 47 à vista</p>
-                <button
-                    class="bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
-                >
-                    QUERO O GUIA AGORA
-                </button>
-                <div>
-                    <img src="" alt="" />
-                    compra segura
-                </div>
-            </section>
-            <section
-                class="w-full flex flex-col-reverse justify-center items-center gap-8 p-4"
-            >
-                <p>Quem vai te ensinar tudo isso?</p>
-                <h2 class="font-extrabold text-3xl text-center">Rebeca Lima</h2>
-            </section>
-        </main>
-        <footer
-            class="w-full flex justify-between items-center min-h-24 py-4 bg-brand-base"
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="assets/img/thumb.png" type="image/png" />
+  </head>
+  <body class="bg-brand-white text-brand-black transition-all ease-in-out">
+    <main class="flex flex-col items-center gap-8 w-full">
+      <section
+        class="bg-brand-pink w-full h-full flex flex-col-reverse items-center p-8 text-brand-white relative md:flex-row md:justify-center animate-fade-down animate-once animate-ease-out"
+      >
+        <div
+          class="flex flex-col items-center py-16 z-30 gap-4 md:w-1/2 md:items-start md:max-w-2xl"
         >
-            <div
-                class="w-full lg:w-2/3 m-auto flex flex-col lg:flex-row justify-between items-center text-brand-white gap-4"
+          <div data-aos="fade-down">
+            <img
+              class="w-[200px]"
+              src="assets/img/logo-rebeca.svg"
+              alt="Logo Rebeca Lima"
+            />
+          </div>
+          <h1
+            class="font-extrabold text-5xl text-center md:text-left"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
+            Desperte o sabor escondido das festas de final de ano
+          </h1>
+          <p
+            class="text-center md:text-left"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            Seja bem-vindo ao meu guia para
+            <span
+              class="border-b-2 border-solid border-brand-sky font-bold"
+              data-aos="fade-left"
+              data-aos-delay="200"
             >
-                <div
-                    class="flex flex-col items-center justify-center lg:flex-row gap-4"
+              celebrações gastronômicas inesquecíveis!
+            </span>
+          </p>
+          <p
+            class="text-center md:text-left"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            Apresento a você o e-book de receitas de festas de final de ano.
+          </p>
+          <p
+            class="text-center md:text-left"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            Uma obra cuidadosamente elaborada por uma
+            <span class="border-b-2 border-solid border-brand-sky font-bold">
+              Nutricionista e Chef de Cozinha
+            </span>
+            apaixonada por criar experiências culinárias memoráveis.
+          </p>
+          <button
+            class="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            QUERO O GUIA AGORA
+          </button>
+        </div>
+        <div
+          class="w-[300px] flex items-center justify-center z-10"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
+          <img src="assets/img/rebeca.png" alt="Rebeca Lima" />
+        </div>
+        <div
+          class="bg-hero-texture bg-[length:10%] opacity-20 absolute top-0 left-0 w-full h-full block z-0 md:bg-5"
+        ></div>
+      </section>
+
+      <section
+        class="w-full flex flex-col justify-center items-center gap-8 p-4 text-brand-marsala md:flex-row"
+      >
+        <div class="flex w-2/3" data-aos="fade-left">
+          <img src="assets/img/mockup.png" alt="Mockup ebook Rebeca Lima" />
+        </div>
+        <div
+          class="flex flex-col justify-center items-center gap-4 text-center md:text-left"
+        >
+          <h2
+            class="font-extrabold text-3xl"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            Por que este Ebook é essencial para suas festas?
+          </h2>
+          <div
+            class="flex flex-col justify-center items-center gap-4"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <p>
+              Explore a combinação perfeita entre nutrição e sabor, desenvolvida
+              por uma profissional experiente.
+            </p>
+            <p>
+              Surpreenda seus convidados com pratos refinados e equilibrados,
+              criados para encantar paladares exigentes.
+            </p>
+            <p>
+              Transforme suas celebrações em experiências memoráveis, onde cada
+              receita conta uma história de amor pela culinária.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full flex flex-col justify-center items-center gap-8 p-16 bg-brand-marsala text-brand-white"
+      >
+        <h2 class="font-extrabold text-3xl text-center" data-aos="fade-left">
+          O que há no E-Book?
+        </h2>
+        <div
+          class="flex gap-12 flex-col justify-center items-center md:flex-row md:justify-around md:text-left"
+        >
+          <div class="flex flex-col gap-4">
+            <p
+              class="flex flex-col items-center justify-center"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <span class="tracking-[5px]"> 10 receitas de </span>
+              <span class="text-5xl font-extrabold">NATAL</span>
+            </p>
+            <p
+              class="flex flex-col items-center justify-center"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <span class="tracking-[5px]"> 10 receitas de </span>
+              <span class="text-5xl font-extrabold">ANO NOVO</span>
+            </p>
+          </div>
+          <div class="md:text-left">
+            <h3
+              class="font-extrabold text-xl"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Estrutura das receitas
+            </h3>
+            <ul class="list-image-[url(/assets/img/check.svg)] list-inside">
+              <li data-aos="fade-right" data-aos-delay="350">2 entradas</li>
+              <li data-aos="fade-right" data-aos-delay="400">
+                2 acompanhamentos
+              </li>
+              <li data-aos="fade-right" data-aos-delay="450">
+                2 pratos principais
+              </li>
+              <li data-aos="fade-right" data-aos-delay="500">2 saladas</li>
+              <li data-aos="fade-right" data-aos-delay="550">1 sobremesas</li>
+              <li data-aos="fade-right" data-aos-delay="600">1 bebidas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full flex justify-center items-center gap-12 relative">
+        <div
+          class="w-[90%] h-80 border-solid text-white bg-gradient-to-b from-brand-sky to-brand-ocean border-brand-sky border-2 rounded-lg flex flex-col justify-center items-center relative z-10"
+        >
+          <div class="z-10 flex flex-col items-center justify-center gap-4">
+            <p class="text-center" data-aos="fade-down">
+              Oferta por tempo limitado
+            </p>
+            <button
+              data-aos="fade-down"
+              data-aos-delay="100"
+              class="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
+            >
+              QUERO COMPRAR AGORA
+            </button>
+            <p
+              class="text-center text-xl"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              Apenas R$ 37,90
+            </p>
+            <p
+              class="text-center text-xs text-white px-8"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              Aviso: O preço pode aumentar a qualquer momento.
+            </p>
+          </div>
+          <div
+            class="bg-hero-texture bg-[length:10%] opacity-10 absolute top-0 left-0 w-full h-full block z-0 md:bg-5"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="w-full flex flex-col justify-center items-center gap-8 p-12 bg-brand-pink text-brand-white"
+      >
+        <h2 class="font-extrabold text-3xl text-center" data-aos="fade-down">
+          Ideal para você:
+        </h2>
+        <div class="flex flex-wrap gap-8 justify-around items-center max-w-3xl">
+          <div class="px-8 py-12 rounded-lg relative">
+            <span
+              class="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
+            >
+              <img
+                src="assets/img/beef-icon.svg"
+                alt="Beef Icon"
+                data-aos="zoom-in"
+              />
+            </span>
+            <p class="max-w-[240px] z-10">
+              Que quer refeições sofisticadas e simples de serem feitas
+            </p>
+            <div
+              class="w-full h-full bg-brand-pink mix-blend-plus-lighter opacity-40 top-0 left-0 absolute rounded-lg z-0"
+            ></div>
+          </div>
+          <div class="px-8 py-12 rounded-lg relative">
+            <span
+              class="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
+            >
+              <img
+                src="assets/img/brief-case-icon.svg"
+                alt="Brief Case Icon"
+                data-aos="zoom-in"
+              />
+            </span>
+            <p class="max-w-[240px] z-10" data-aos="zoom-in">
+              Profissional com carreira exigente e responsabilidades familiares
+            </p>
+            <div
+              class="w-full h-full bg-brand-pink mix-blend-plus-lighter opacity-40 top-0 left-0 absolute rounded-lg z-0"
+            ></div>
+          </div>
+          <div class="px-8 py-12 rounded-lg relative">
+            <span
+              class="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
+              data-aos="zoom-in"
+            >
+              <img
+                src="assets/img/alarm-clock-check-icon.svg"
+                alt="Alarm Icon"
+                data-aos="zoom-in"
+              />
+            </span>
+            <p class="max-w-[240px] z-10" data-aos="zoom-in">
+              Que quer soluções práticas e eficientes para otimizar seu tempo
+              escasso
+            </p>
+            <div
+              class="w-full h-full bg-brand-pink mix-blend-plus-lighter opacity-40 top-0 left-0 absolute rounded-lg z-0"
+            ></div>
+          </div>
+          <div class="px-8 py-12 rounded-lg relative">
+            <span
+              class="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
+              data-aos="zoom-in"
+            >
+              <img
+                src="assets/img/shopping-cart-icon.svg"
+                alt="Shopping Cart Icon"
+                data-aos="zoom-in"
+              />
+            </span>
+            <p class="max-w-[240px] z-10">
+              Que valoriza produtos que se integram facilmente ao seu estilo de
+              vida agitado
+            </p>
+            <div
+              class="w-full h-full bg-brand-pink mix-blend-plus-lighter opacity-40 top-0 left-0 rounded-lg absolute z-0"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full flex flex-col justify-center items-center gap-8 p-4 text-brand-marsala"
+      >
+        <h2 class="font-extrabold text-3xl text-center" data-aos="fade-down">
+          O que você vai conquistar se adquirir o e-book agora?
+        </h2>
+        <div class="grid grid-cols-2 gap-4 m-auto">
+          <p
+            class="max-w-sm font-medium"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            🕒 Tempo é Precioso - Receitas Rápidas
+          </p>
+          <p
+            class="max-w-sm font-medium"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            📅 Planejamento de Refeições
+          </p>
+          <p
+            class="max-w-sm font-medium"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            🌮 Variedade para Paladares Exigentes
+          </p>
+          <p
+            class="max-w-sm font-medium"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
+            🛒 Listas de Compras Descomplicadas
+          </p>
+          <p
+            class="max-w-sm font-medium"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            🌿 Nutrição sem Compromissos
+          </p>
+          <p
+            class="max-w-sm font-medium"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
+            🍽️ Simplicidade na Cozinha - Zero Estresse
+          </p>
+          <p
+            class="max-w-sm font-medium"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
+            🎉 Liberte-se da Pressão na Cozinha e Descubra o Prazer de Cada
+            Refeição!
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="w-full flex justify-center items-center gap-12 relative mt-36"
+      >
+        <div class="z-10 text-white w-1/4">
+          <h2
+            class="font-extrabold text-3xl"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            Oferta especial
+            <span
+              class="text-brand-sky border-solid border-b-2 border-brand-sky"
+              >por tempo limitado
+            </span>
+          </h2>
+          <p data-aos="fade-right" data-aos-delay="200">
+            Tenha acesso imediato a todo conteúdo deste ebook por uma condição
+            especial.
+          </p>
+        </div>
+        <div class="flex relative text-white">
+          <div
+            class="w-80 h-96 border-solid bg-gradient-to-b from-brand-sky to-brand-ocean border-brand-sky border-2 rounded-lg flex flex-col justify-center items-center relative z-10"
+          >
+            <div class="z-10 flex flex-col items-center justify-center gap-4">
+              <img
+                class="absolute inset-x-0 -top-40"
+                src="/assets/img/ebooks.png"
+                alt="Ebooks"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              />
+              <p
+                class="mt-28 text-center"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
+                Por apenas:
+                <br />
+                <span
+                  class="font-extrabold text-4xl"
+                  data-aos="fade-down"
+                  data-aos-delay="400"
                 >
-                    <img
-                        src="assets/img/vlnt.svg"
-                        alt="Logo Valente - Consultoria &amp; Inovação"
-                        class="max-w-[200px]"
-                    />
-                    <div class="text-center lg:text-left">
-                        <strong
-                            >Copyright © 2023 Valente Consultoria e Inovação
-                            LTDA / CNPJ: 31.803.058/0001-05</strong
-                        >
-                        <p>
-                            Av. Paulista, 1471 - Conj 1110, Jd. Paulista - São
-                            Paulo - SP, 01311-927
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <a href="https://basixdigital.com.br"
-                        ><img
-                            src="assets/img/x-basix.svg"
-                            alt="Basix Digital"
-                            class="w-11 h-11"
-                    /></a>
-                </div>
+                  12x de R$3,79
+                </span>
+                <br />
+                <span
+                  class="font-normal"
+                  data-aos="fade-down"
+                  data-aos-delay="400"
+                >
+                  ou R$ 37,90 à vista
+                </span>
+              </p>
+              <button
+                class="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                QUERO COMPRAR AGORA
+              </button>
+              <p
+                class="text-center text-xs px-12"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                Aviso: O preço pode aumentar a qualquer momento.
+              </p>
             </div>
-        </footer>
-    </body>
+            <div
+              class="bg-hero-texture bg-[length:10%] opacity-10 absolute top-0 left-0 w-full h-full block z-0 md:bg-5"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="absolute top-[50%] -translate-y-[50%] bg-brand-pink/80 w-full h-52 z-0"
+        ></div>
+      </section>
+
+      <section
+        data-aos="zoom-in"
+        class="w-full h-96 flex justify-around items-center gap-8 p-4 bg-sacada bg-contain bg-no-repeat bg-center bg-brand-black"
+      >
+        <div>
+          <a
+            class="p-2 bg-brand-black/80 backdrop-blur text-brand-white rounded-full border-2 border-solid border-brand-black"
+            href="http://instagram.com/rebecalimanutri"
+            target="_blank"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            @rebecalimanutri
+          </a>
+        </div>
+        <div>
+          <h2
+            class="font-extrabold text-3xl text-left text-brand-white"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            De Nutricionista a Chef de Cozinha. <br />
+            Quem é <span class="text-brand-sky">Rebeca Lima</span>?
+          </h2>
+          <p data-aos="fade-right" data-aos-delay="400">Texto texto texto</p>
+        </div>
+      </section>
+
+      <section class="w-full flex justify-center items-center gap-12 relative">
+        <div
+          class="w-[90%] h-80 border-solid text-white bg-gradient-to-b from-brand-sky to-brand-ocean border-brand-sky border-2 rounded-lg flex flex-col justify-center items-center relative z-10"
+        >
+          <div class="z-10 flex flex-col items-center justify-center gap-4">
+            <p class="text-center" data-aos="fade-down">
+              Oferta por tempo limitado
+            </p>
+            <button
+              data-aos="fade-down"
+              data-aos-delay="100"
+              class="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
+            >
+              QUERO COMPRAR AGORA
+            </button>
+            <p
+              class="text-center text-xl"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              Apenas R$ 37,90
+            </p>
+            <p
+              class="text-center text-xs text-white px-8"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              Aviso: O preço pode aumentar a qualquer momento.
+            </p>
+          </div>
+          <div
+            class="bg-hero-texture bg-[length:10%] opacity-10 absolute top-0 left-0 w-full h-full block z-0 md:bg-5"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="w-full flex justify-between items-center min-h-24 py-4 bg-brand-black/80 mt-12"
+    >
+      <div
+        class="w-full lg:w-2/3 m-auto flex flex-col lg:flex-row justify-between items-center text-brand-white gap-4"
+      >
+        <div
+          class="flex flex-col items-center justify-center lg:flex-row gap-4"
+        >
+          <img
+            src="assets/img/vlnt.svg"
+            alt="Logo Valente - Consultoria &amp; Inovação"
+            class="max-w-[200px]"
+          />
+          <div class="text-center lg:text-left group">
+            <strong class="flex justify-between items-center">
+              Copyright © 2023 Valente Consultoria e Inovação LTDA
+              <span class="opacity-0 group-hover:opacity-100 font-normal">
+                &nbsp;/ CNPJ: 31.803.058/0001-05
+              </span>
+            </strong>
+            <p>
+              Av. Paulista, 1471 - Conj 1110, Jd. Paulista - São Paulo - SP,
+              01311-927
+            </p>
+          </div>
+        </div>
+        <div>
+          <a href="https://basixdigital.com.br"
+            ><img
+              src="assets/img/x-basix.svg"
+              alt="Basix Digital"
+              class="w-11 h-11"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
