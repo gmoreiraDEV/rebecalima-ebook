@@ -6,16 +6,22 @@ export default function IdealForYouComponent() {
       </h2>
       <div className="flex flex-wrap gap-8 justify-around items-center max-w-3xl">
         <div className="px-8 py-12 rounded-lg relative">
-          <span className="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10">
+          <span
+            className="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
+            data-aos="zoom-in"
+          >
             <img src="/img/beef-icon.svg" alt="Beef Icon" data-aos="zoom-in" />
           </span>
-          <p className="max-w-[240px] z-10">
+          <p className="max-w-[240px] z-10" data-aos="zoom-in">
             Que quer refeições sofisticadas e simples de serem feitas
           </p>
           <div className="w-full h-full bg-brand-pink mix-blend-plus-lighter opacity-40 top-0 left-0 absolute rounded-lg z-0"></div>
         </div>
         <div className="px-8 py-12 rounded-lg relative">
-          <span className="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10">
+          <span
+            className="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
+            data-aos="zoom-in"
+          >
             <img
               src="/img/brief-case-icon.svg"
               alt="Brief Case Icon"
@@ -55,7 +61,7 @@ export default function IdealForYouComponent() {
               data-aos="zoom-in"
             />
           </span>
-          <p className="max-w-[240px] z-10">
+          <p className="max-w-[240px] z-10" data-aos="zoom-in">
             Que valoriza produtos que se integram facilmente ao seu estilo de
             vida agitado
           </p>
