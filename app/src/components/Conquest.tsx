@@ -4,56 +4,56 @@ export default function ConquestComponent() {
       <h2 className="font-extrabold text-3xl text-center" data-aos="fade-down">
         O que você vai conquistar se adquirir o e-book agora?
       </h2>
-      <div className="grid grid-cols-2 gap-4 m-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-auto">
         <p
           className="max-w-sm font-medium"
           data-aos="fade-right"
           data-aos-delay="100"
         >
-          🕒 Tempo é Precioso - Receitas Rápidas
+          🕒 Tempo é precioso - Receitas rápidas
         </p>
         <p
           className="max-w-sm font-medium"
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          📅 Planejamento de Refeições
+          📅 Planejamento de refeições
         </p>
         <p
           className="max-w-sm font-medium"
           data-aos="fade-right"
           data-aos-delay="300"
         >
-          🌮 Variedade para Paladares Exigentes
+          🌮 Variedade para paladares exigentes
         </p>
         <p
           className="max-w-sm font-medium"
           data-aos="fade-right"
           data-aos-delay="400"
         >
-          🛒 Listas de Compras Descomplicadas
+          🛒 Listas de compras descomplicadas
         </p>
         <p
           className="max-w-sm font-medium"
           data-aos="fade-right"
           data-aos-delay="500"
         >
-          🌿 Nutrição sem Compromissos
+          🌿 Nutrição sem compromissos
         </p>
         <p
           className="max-w-sm font-medium"
           data-aos="fade-right"
           data-aos-delay="600"
         >
-          🍽️ Simplicidade na Cozinha - Zero Estresse
+          🍽️ Simplicidade na cozinha - Zero estresse
         </p>
         <p
           className="max-w-sm font-medium"
           data-aos="fade-right"
           data-aos-delay="700"
         >
-          🎉 Liberte-se da Pressão na Cozinha e Descubra o Prazer de Cada
-          Refeição!
+          🎉 Liberte-se da pressão na cozinha e descubra o prazer de cada
+          refeição!
         </p>
       </div>
     </section>

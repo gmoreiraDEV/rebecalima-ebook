@@ -18,6 +18,12 @@ const config: Config = {
       backgroundSize: {
         5: "5%",
       },
+      backgroundPosition: {
+        18: "18%",
+      },
+      padding: {
+        unset: "unset",
+      },
       colors: {
         brand: {
           white: "#F9EBFF",

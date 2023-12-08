@@ -61,13 +61,17 @@ export default function HeroComponent() {
         </a>
       </div>
       <div
-        className="w-[400px] flex items-center justify-center z-10"
+        className="md:w-[400px] flex items-center justify-center z-10"
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <img src="/img/rebeca.png" alt="Rebeca Lima" />
+        <img
+          className="w-[300px] md:w-auto"
+          src="/img/rebeca.png"
+          alt="Rebeca Lima"
+        />
       </div>
-      <div className="absolute w-full h-1/2 bg-gradient-to-t from-40% from-brand-pink to-transparent bottom-0 z-[10]" />
+      <div className="absolute w-full h-full md:h-1/2 bg-gradient-to-t from-65% md:from-40% from-brand-pink to-transparent bottom-0 z-[10]" />
       <div className="bg-hero-texture bg-[length:10%] opacity-20 absolute top-0 left-0 w-full h-full block z-0 md:bg-5" />
     </section>
   );

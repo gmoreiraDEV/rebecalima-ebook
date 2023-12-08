@@ -3,10 +3,10 @@ import { formatPrice } from "@/utils/price";
 
 export default function SaleComponent() {
   return (
-    <section className="w-full flex justify-center items-center gap-12 relative mt-36">
-      <div className="z-10 text-white w-1/4">
+    <section className="w-full flex justify-center items-center flex-col md:flex-row gap-12 relative md:mt-36">
+      <div className="z-10 text-white w-2/3 p-4 flex justify-center items-center  flex-col md:block md:p-unset md:w-1/4 ">
         <h2
-          className="font-extrabold text-3xl"
+          className="font-extrabold text-3xl text-center md:text-left"
           data-aos="fade-right"
           data-aos-delay="200"
         >
@@ -15,12 +15,16 @@ export default function SaleComponent() {
             por tempo limitado
           </span>
         </h2>
-        <p data-aos="fade-right" data-aos-delay="200">
+        <p
+          data-aos="fade-right"
+          data-aos-delay="200"
+          className="text-center mt-4 md:text-left"
+        >
           Tenha acesso imediato a todo conteúdo deste e-book por uma condição
           especial.
         </p>
       </div>
-      <div className="flex relative text-white">
+      <div className="flex relative text-white mt-20 mb-10">
         <div className="w-80 h-96 border-solid bg-gradient-to-b from-brand-sky to-brand-ocean border-brand-sky border-2 rounded-lg flex flex-col justify-center items-center relative z-10">
           <div className="z-10 flex flex-col items-center justify-center gap-4">
             <img
@@ -73,7 +77,7 @@ export default function SaleComponent() {
           <div className="bg-hero-texture bg-[length:10%] opacity-10 absolute top-0 left-0 w-full h-full block z-0 md:bg-5"></div>
         </div>
       </div>
-      <div className="absolute top-[50%] -translate-y-[50%] bg-brand-pink/80 w-full h-52 z-0"></div>
+      <div className="absolute top-[50%] -translate-y-[50%] bg-brand-pink/80 w-full h-full p-8 md:p-unset lg:h-52 z-0"></div>
     </section>
   );
 }
