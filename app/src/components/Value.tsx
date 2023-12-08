@@ -1,3 +1,6 @@
+import { EBOOK_LINK } from "@/constants";
+import { formatPrice } from "@/utils/price";
+
 export default function ValueComponent() {
   return (
     <section className="w-full flex justify-center items-center gap-12 relative">
@@ -6,19 +9,21 @@ export default function ValueComponent() {
           <p className="text-center" data-aos="fade-down">
             Oferta por tempo limitado
           </p>
-          <button
+          <a
             data-aos="fade-down"
             data-aos-delay="100"
-            className="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
+            className="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold rounded-lg relative overflow-hidden before:absolute before:h-full before:top-0 before:left-0 before:w-full before:content-[''] before:from-brand-beige before:to-brand-marsala before:bg-gradient-to-r before:opacity-0 before:-z-10 hover:before:opacity-100 hover:drop-shadow-lg"
+            href={EBOOK_LINK}
+            id="cta"
           >
             QUERO COMPRAR AGORA
-          </button>
+          </a>
           <p
             className="text-center text-xl"
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            Apenas R$ 37,90
+            Apenas <strong>{formatPrice(true)}</strong> à vista
           </p>
           <p
             className="text-center text-xs text-white px-8"

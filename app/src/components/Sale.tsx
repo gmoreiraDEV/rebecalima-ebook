@@ -1,3 +1,6 @@
+import { EBOOK_LINK } from "@/constants";
+import { formatPrice } from "@/utils/price";
+
 export default function SaleComponent() {
   return (
     <section className="w-full flex justify-center items-center gap-12 relative mt-36">
@@ -7,7 +10,7 @@ export default function SaleComponent() {
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          Oferta especial
+          Oferta especial&nbsp;
           <span className="text-brand-sky border-solid border-b-2 border-brand-sky">
             por tempo limitado
           </span>
@@ -39,7 +42,7 @@ export default function SaleComponent() {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                12x de R$3,79
+                12x de {formatPrice(false)}
               </span>
               <br />
               <span
@@ -47,16 +50,18 @@ export default function SaleComponent() {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                ou R$ 37,90 à vista
+                ou&nbsp;{formatPrice(true)}&nbsp;à vista
               </span>
             </p>
-            <button
-              className="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
+            <a
+              className="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold rounded-lg relative overflow-hidden before:absolute before:h-full before:top-0 before:left-0 before:w-full before:content-[''] before:from-brand-beige before:to-brand-marsala before:bg-gradient-to-r before:opacity-0 before:-z-10 hover:before:opacity-100 hover:drop-shadow-lg"
               data-aos="fade-up"
               data-aos-delay="500"
+              href={EBOOK_LINK}
+              id="cta"
             >
               QUERO COMPRAR AGORA
-            </button>
+            </a>
             <p
               className="text-center text-xs px-12"
               data-aos="fade-up"
