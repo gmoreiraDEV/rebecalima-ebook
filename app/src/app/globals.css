@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+a#cta::before {
+  transition: opacity 300ms ease-in-out !important;
+}
+a:hover {
+  transition: padding 300ms ease-in-out !important;
+}
+
 body {
   margin: 0;
   padding: 0;
