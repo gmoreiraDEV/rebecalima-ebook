@@ -1,3 +1,5 @@
+import { EBOOK_LINK } from "@/constants";
+
 export default function HeroComponent() {
   return (
     <section className="bg-brand-pink w-full h-full flex flex-col-reverse items-center p-8 text-brand-white relative md:flex-row md:justify-center animate-fade-down animate-once animate-ease-out">
@@ -21,7 +23,7 @@ export default function HeroComponent() {
           data-aos="fade-left"
           data-aos-delay="200"
         >
-          Seja bem-vindo ao meu guia para
+          Seja bem-vindo ao meu guia para&nbsp;
           <span
             className="border-b-2 border-solid border-brand-sky font-bold"
             data-aos="fade-left"
@@ -42,19 +44,21 @@ export default function HeroComponent() {
           data-aos="fade-left"
           data-aos-delay="200"
         >
-          Uma obra cuidadosamente elaborada por uma
+          Uma obra cuidadosamente elaborada por uma&nbsp;
           <span className="border-b-2 border-solid border-brand-sky font-bold">
             Nutricionista e Chef de Cozinha
           </span>
-          apaixonada por criar experiências culinárias memoráveis.
+          &nbsp;apaixonada por criar experiências culinárias memoráveis.
         </p>
-        <button
-          className="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold hover:from-brand-beige hover:to-brand-marsala hover:drop-shadow-lg rounded-lg"
+        <a
+          className="transition-all bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold rounded-lg relative overflow-hidden before:absolute before:h-full before:top-0 before:left-0 before:w-full before:content-[''] before:from-brand-beige before:to-brand-marsala before:bg-gradient-to-r before:opacity-0 before:-z-10 hover:before:opacity-100 hover:drop-shadow-lg"
           data-aos="fade-up"
           data-aos-delay="300"
+          id="cta"
+          href={EBOOK_LINK}
         >
           QUERO O GUIA AGORA
-        </button>
+        </a>
       </div>
       <div
         className="w-[400px] flex items-center justify-center z-10"
