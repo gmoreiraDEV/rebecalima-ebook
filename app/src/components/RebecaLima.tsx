@@ -29,9 +29,8 @@ export default function RebecaLimaComponent() {
         </h2>
         <div className="text-brand-white max-w-lg text-center md:text-left">
           <p className="mt-4" data-aos="fade-right" data-aos-delay="400">
-            Graduada em Nutrição e em Gastronomia, <strong>Rebeca Lima</strong>{" "}
-            é uma pessoa que une duas paixões,&nbsp;
-            <strong>Nutrição e Gastronomia</strong>.
+            Graduada em 2 áreas, <strong>Rebeca Lima</strong>&nbsp;é uma pessoa
+            que une duas paixões,&nbsp;<strong>Nutrição e Gastronomia</strong>.
           </p>
           <p className="mt-4" data-aos="fade-right" data-aos-delay="500">
             Especializada em criar experiências gastronômicas personalizadas,

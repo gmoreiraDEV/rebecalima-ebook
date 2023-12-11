@@ -29,13 +29,6 @@ export default function ConquestComponent() {
         <p
           className="max-w-sm font-medium"
           data-aos="fade-right"
-          data-aos-delay="400"
-        >
-          🛒 Listas de compras descomplicadas
-        </p>
-        <p
-          className="max-w-sm font-medium"
-          data-aos="fade-right"
           data-aos-delay="500"
         >
           🌿 Nutrição sem compromissos
