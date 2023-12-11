@@ -19,7 +19,7 @@ export default function HeroComponent() {
           data-aos="fade-left"
           data-aos-delay="100"
         >
-          Desperte o sabor escondido das festas de final de ano
+          Desperte o sabor das festas de final de ano
         </h1>
         <p
           className="text-center md:text-left"
