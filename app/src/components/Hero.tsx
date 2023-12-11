@@ -1,14 +1,17 @@
 import { EBOOK_LINK } from "@/constants";
+import CloudImage from "./CloudImage";
 
 export default function HeroComponent() {
   return (
     <section className="bg-brand-pink w-full h-full flex flex-col-reverse items-center p-8 text-brand-white relative md:flex-row md:justify-center animate-fade-down animate-once animate-ease-out">
       <div className="flex flex-col items-center py-16 z-30 gap-4 md:w-1/2 md:items-start md:max-w-2xl">
         <div data-aos="fade-down">
-          <img
-            className="w-[200px]"
-            src="/img/logo-rebeca.svg"
+          <CloudImage
+            src="ebook-natal/rebeca-lima-logo"
             alt="Logo Rebeca Lima"
+            width={"2500"}
+            height={"1152"}
+            className="w-[200px]"
           />
         </div>
         <h1
@@ -65,10 +68,12 @@ export default function HeroComponent() {
         data-aos="fade-right"
         data-aos-delay="500"
       >
-        <img
-          className="w-[300px] md:w-auto"
-          src="/img/rebeca.png"
+        <CloudImage
+          src="ebook-natal/rebeca-lima-foto"
           alt="Rebeca Lima"
+          width={"950"}
+          height={"1296"}
+          className="w-[300px] md:w-auto"
         />
       </div>
       <div className="absolute w-full h-full md:h-1/2 bg-gradient-to-t from-65% md:from-40% from-brand-pink to-transparent bottom-0 z-[10]" />

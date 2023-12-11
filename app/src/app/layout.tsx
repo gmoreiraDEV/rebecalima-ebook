@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "./globals.css";
 import Footer from "@/components/Footer";
 

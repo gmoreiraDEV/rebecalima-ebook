@@ -1,3 +1,5 @@
+import CloudImage from "./CloudImage";
+
 export default function IdealForYouComponent() {
   return (
     <section className="w-full flex flex-col justify-center items-center gap-8 p-12 bg-brand-pink text-brand-white">
@@ -10,7 +12,13 @@ export default function IdealForYouComponent() {
             className="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
             data-aos="zoom-in"
           >
-            <img src="/img/beef-icon.svg" alt="Beef Icon" data-aos="zoom-in" />
+            <CloudImage
+              src="ebook-natal/beef-icon"
+              alt="Beef Icon"
+              data-aos="zoom-in"
+              width={"24"}
+              height={"24"}
+            />
           </span>
           <p className="max-w-[240px] z-10" data-aos="zoom-in">
             Que quer refeições sofisticadas e simples de serem feitas
@@ -22,10 +30,12 @@ export default function IdealForYouComponent() {
             className="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
             data-aos="zoom-in"
           >
-            <img
-              src="/img/brief-case-icon.svg"
-              alt="Brief Case Icon"
+            <CloudImage
+              src="ebook-natal/work-icon"
+              alt="Work Icon"
               data-aos="zoom-in"
+              width={"24"}
+              height={"24"}
             />
           </span>
           <p className="max-w-[240px] z-10" data-aos="zoom-in">
@@ -38,10 +48,12 @@ export default function IdealForYouComponent() {
             className="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
             data-aos="zoom-in"
           >
-            <img
-              src="/img/alarm-clock-check-icon.svg"
+            <CloudImage
+              src="ebook-natal/clock-icon"
               alt="Alarm Icon"
               data-aos="zoom-in"
+              width={"24"}
+              height={"24"}
             />
           </span>
           <p className="max-w-[240px] z-10" data-aos="zoom-in">
@@ -55,10 +67,12 @@ export default function IdealForYouComponent() {
             className="w-12 h-12 bg-brand-sky flex justify-center items-center rounded-full absolute -top-5 z-10"
             data-aos="zoom-in"
           >
-            <img
-              src="/img/shopping-cart-icon.svg"
-              alt="Shopping Cart Icon"
+            <CloudImage
+              src="ebook-natal/cart-icon"
+              alt="Cart Icon"
               data-aos="zoom-in"
+              width={"24"}
+              height={"24"}
             />
           </span>
           <p className="max-w-[240px] z-10" data-aos="zoom-in">

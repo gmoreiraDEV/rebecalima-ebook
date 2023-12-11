@@ -31,7 +31,7 @@ export default function ContentComponent() {
           >
             Estrutura das receitas
           </h3>
-          <ul className="list-image-[url(/img/check.svg)] list-inside">
+          <ul className="list-image-checkmark list-inside pl-5 space-y-3">
             <li data-aos="fade-right" data-aos-delay="350">
               2 entradas
             </li>

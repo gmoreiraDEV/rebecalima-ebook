@@ -1,5 +1,6 @@
 import { EBOOK_LINK } from "@/constants";
 import { formatPrice } from "@/utils/price";
+import CloudImage from "./CloudImage";
 
 export default function SaleComponent() {
   return (
@@ -27,12 +28,14 @@ export default function SaleComponent() {
       <div className="flex relative text-white mt-20 mb-10">
         <div className="w-80 h-96 border-solid bg-gradient-to-b from-brand-sky to-brand-ocean border-brand-sky border-2 rounded-lg flex flex-col justify-center items-center relative z-10">
           <div className="z-10 flex flex-col items-center justify-center gap-4">
-            <img
-              className="absolute inset-x-0 -top-40"
-              src="/img/ebooks.png"
+            <CloudImage
+              src="ebook-natal/ebooks"
               alt="E-Books"
               data-aos="zoom-in"
               data-aos-delay="300"
+              width={"1500"}
+              height={"1500"}
+              className="absolute inset-x-0 -top-40"
             />
             <p
               className="mt-28 text-center"

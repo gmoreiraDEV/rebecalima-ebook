@@ -1,8 +1,15 @@
+import CloudImage from "./CloudImage";
+
 export default function EssentialComponent() {
   return (
     <section className="w-full flex flex-col justify-center items-center gap-8 p-4 text-brand-marsala md:flex-row">
       <div className="flex w-2/3" data-aos="fade-left">
-        <img src="/img/mockup.png" alt="Mockup e-book Rebeca Lima" />
+        <CloudImage
+          src="ebook-natal/ebook-capa"
+          alt="E-book Rebeca Lima"
+          width={"2500"}
+          height={"2500"}
+        />
       </div>
       <div className="flex flex-col justify-center items-center gap-4 text-center md:text-left">
         <h2
