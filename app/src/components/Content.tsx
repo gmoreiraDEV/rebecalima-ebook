@@ -33,7 +33,7 @@ export default function ContentComponent() {
           </h3>
           <ul className="list-image-checkmark list-inside pl-5 space-y-3">
             <li data-aos="fade-right" data-aos-delay="350">
-              2 entradas
+              1 entrada
             </li>
             <li data-aos="fade-right" data-aos-delay="400">
               2 acompanhamentos
@@ -42,7 +42,7 @@ export default function ContentComponent() {
               2 pratos principais
             </li>
             <li data-aos="fade-right" data-aos-delay="500">
-              2 saladas
+              1 salada
             </li>
             <li data-aos="fade-right" data-aos-delay="550">
               1 sobremesas
