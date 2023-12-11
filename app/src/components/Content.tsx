@@ -11,7 +11,7 @@ export default function ContentComponent() {
             data-aos="fade-left"
             data-aos-delay="100"
           >
-            <span className="tracking-[5px]"> 10 receitas de </span>
+            <span className="tracking-[5px]"> 8 receitas de </span>
             <span className="text-5xl font-extrabold">NATAL</span>
           </p>
           <p
@@ -19,7 +19,7 @@ export default function ContentComponent() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            <span className="tracking-[5px]"> 10 receitas de </span>
+            <span className="tracking-[5px]"> 8 receitas de </span>
             <span className="text-5xl font-extrabold">ANO NOVO</span>
           </p>
         </div>
