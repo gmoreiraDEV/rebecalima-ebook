@@ -75,10 +75,11 @@ export default function Home() {
           fontSize: "13px",
         }}
       >
-        Topa um acordo delicioso? 🎄 Clica em \'Aceitar\' para abrir as portas
-        para nossos cookies especiais. 🍪✨ Prometemos que são tão leves quanto
-        a neve e mais gostosos que a ceia de Natal! Consentimento é a chave para
-        uma experiência online tão deliciosa quanto uma manhã natalina.🎁🥳
+        Topa um acordo delicioso? 🎄 Clica em <strong>Aceitar</strong> para
+        abrir as portas para nossos cookies especiais. 🍪✨ Prometemos que são
+        tão leves quanto a neve e mais gostosos que a ceia de Natal!
+        Consentimento é a chave para uma experiência online tão deliciosa quanto
+        uma manhã natalina.🎁🥳
       </CookieConsent>
     </main>
   );
