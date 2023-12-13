@@ -5,7 +5,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import FacebookPixel from "@/components/FacebookPixel";
-import GooglePixel from "@/components/GooglePixel";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -28,7 +27,21 @@ export default function RootLayout({
         <Footer />
         <SpeedInsights />
         <FacebookPixel />
-        <GooglePixel />
+        <iframe
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11441820553"
+          width={0}
+          height={0}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-11441820553');
+              `,
+          }}
+        />
       </body>
     </html>
   );
