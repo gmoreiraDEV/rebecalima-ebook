@@ -1,19 +1,20 @@
 import { EBOOK_LINK } from "@/constants";
-import * as pixel from "@/lib/fpixel";
+import { usePathname } from "next/navigation";
 
-import CloudImage from "./CloudImage";
-import { useRouter } from "next/router";
+import * as pixel from "@/lib/fpixel";
 import { gtag_report_conversion } from "@/lib/gpixel";
 
+import CloudImage from "./CloudImage";
+
 export default function HeroComponent() {
-  const { asPath } = useRouter();
+  const pathname = usePathname();
 
   const origin =
     typeof window !== "undefined" && window.location.origin
       ? window.location.origin
       : "";
 
-  const URL = `${origin}${asPath}` as Location | (string & Location);
+  const URL = `${origin}${pathname}` as Location | (string & Location);
 
   const handleLink = () => {
     pixel.event("InitiateCheckout");
