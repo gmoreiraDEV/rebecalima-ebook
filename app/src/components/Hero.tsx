@@ -2,10 +2,22 @@ import { EBOOK_LINK } from "@/constants";
 import * as pixel from "@/lib/fpixel";
 
 import CloudImage from "./CloudImage";
+import { useRouter } from "next/router";
+import { gtag_report_conversion } from "@/lib/gpixel";
 
 export default function HeroComponent() {
+  const { asPath } = useRouter();
+
+  const origin =
+    typeof window !== "undefined" && window.location.origin
+      ? window.location.origin
+      : "";
+
+  const URL = `${origin}${asPath}` as Location | (string & Location);
+
   const handleLink = () => {
     pixel.event("InitiateCheckout");
+    gtag_report_conversion(URL);
   };
   return (
     <section className="bg-brand-pink w-full h-full flex flex-col-reverse items-center p-8 text-brand-white relative md:flex-row md:justify-center animate-fade-down animate-once animate-ease-out">
