@@ -18,7 +18,6 @@ import ExitPopup from "@/components/ExitPopup";
 import { useExitPopupStore } from "@/stores/exitPopup";
 
 export default function Home() {
-  const mainRef = useRef(null);
   const { setShowExitPopUp } = useExitPopupStore();
   const { registerHandler } = useExitIntent({
     cookie: {
@@ -47,10 +46,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main
-      className="flex flex-col items-center gap-8 w-full relative"
-      ref={mainRef}
-    >
+    <main className="flex flex-col items-center gap-8 w-full relative">
       <HeroComponent />
       <EssentialComponent />
       <ContentComponent />

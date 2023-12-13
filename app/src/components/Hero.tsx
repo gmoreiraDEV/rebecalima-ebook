@@ -1,7 +1,12 @@
 import { EBOOK_LINK } from "@/constants";
+import * as pixel from "@/lib/fpixel";
+
 import CloudImage from "./CloudImage";
 
 export default function HeroComponent() {
+  const handleLink = () => {
+    pixel.event("InitiateCheckout");
+  };
   return (
     <section className="bg-brand-pink w-full h-full flex flex-col-reverse items-center p-8 text-brand-white relative md:flex-row md:justify-center animate-fade-down animate-once animate-ease-out">
       <div className="flex flex-col items-center py-16 z-30 gap-4 md:w-1/2 md:items-start md:max-w-2xl">
@@ -59,6 +64,8 @@ export default function HeroComponent() {
           data-aos-delay="300"
           id="cta"
           href={EBOOK_LINK}
+          target="_blank"
+          onClick={handleLink}
         >
           QUERO O GUIA AGORA
         </a>

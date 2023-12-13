@@ -45,10 +45,10 @@ export default function ContentComponent() {
               1 salada
             </li>
             <li data-aos="fade-right" data-aos-delay="550">
-              1 sobremesas
+              1 sobremesa
             </li>
             <li data-aos="fade-right" data-aos-delay="600">
-              1 bebidas
+              1 bebida
             </li>
           </ul>
         </div>

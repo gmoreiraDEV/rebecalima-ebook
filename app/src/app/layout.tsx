@@ -4,6 +4,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
 import Footer from "@/components/Footer";
+import FacebookPixel from "@/components/FacebookPixel";
+import GooglePixel from "@/components/GooglePixel";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -25,6 +27,8 @@ export default function RootLayout({
         {children}
         <Footer />
         <SpeedInsights />
+        <FacebookPixel />
+        <GooglePixel />
       </body>
     </html>
   );
