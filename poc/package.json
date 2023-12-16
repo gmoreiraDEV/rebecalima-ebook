@@ -1,0 +1,18 @@
+{
+  "name": "poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"Deploy: currently running...\"",
+    "get": "dotenv -- cross-var curl -o ./certificate/%CERTIFICATE_NAME% \"%NEXT_APPWRITE_URL%/storage/buckets/%CONFIG_BUCKET_ID%/files/%CERTIFICATE_FILE_ID%/download\" -X GET -H \"Content-Type: application/json\" -H \"X-Appwrite-Response-Format: 1.4.13\" -H \"X-Appwrite-Project: %NEXT_APPWRITE_PROJECT%\" -H \"X-Appwrite-Key: %APP_WRITE_API_KEY%\"",
+    "prebuild": "chmod 777 ./pre-deploy.sh && bash ./pre-deploy.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.3.0"
+  }
+}
