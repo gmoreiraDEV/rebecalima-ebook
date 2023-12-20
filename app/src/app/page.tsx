@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useExitIntent } from "use-exit-intent";
 import CookieConsent from "react-cookie-consent";
 import AOS from "aos";
@@ -16,7 +16,10 @@ import SaleComponent from "@/components/Sale";
 import ValueComponent from "@/components/Value";
 import ExitPopup from "@/components/ExitPopup";
 import { useExitPopupStore } from "@/stores/exitPopup";
-import Checkout from "@/components/Checkout";
+
+const APIVERSION = "v18.0";
+const PIXELID = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
+const TOKEN = process.env.NEXT_PUBLIC_FB_ACCESS_TOKEN;
 
 export default function Home() {
   const { setShowExitPopUp } = useExitPopupStore();
@@ -42,7 +45,33 @@ export default function Home() {
     handler: () => setShowExitPopUp(),
   });
 
+  async function pageView() {
+    const res = await fetch(
+      `https://graph.facebook.com/${APIVERSION}/${PIXELID}/events?access_token=${TOKEN}`,
+      {
+        method: "POST",
+        body: JSON.stringify({
+          data: [
+            {
+              event_name: "PageView",
+              event_time: Date.now(),
+              action_source: "website",
+              custom_data: {
+                currency: "BRL",
+                value: 47,
+              },
+            },
+          ],
+        }),
+      }
+    )
+      .then((res) => res.json())
+      .catch((e) => console.log(e));
+    return res;
+  }
+
   useEffect(() => {
+    pageView();
     AOS.init();
   }, []);
 
@@ -57,7 +86,6 @@ export default function Home() {
       <SaleComponent />
       <RebecaLimaComponent />
       <ValueComponent />
-      <Checkout />
       <ExitPopup />
       <CookieConsent
         location="bottom"

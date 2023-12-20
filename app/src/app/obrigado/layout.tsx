@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Obrigado | Rebeca Lima",
