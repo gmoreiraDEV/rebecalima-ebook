@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run prebuild && next dev",
+    "prebuild": "bash ./pre-build.sh",
+    "precommit": "bash ./pre-commit.sh",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,13 +13,17 @@
   "dependencies": {
     "@vercel/speed-insights": "^1.0.1",
     "aos": "^2.3.4",
+    "appwrite": "^13.0.1",
     "cloudinary": "^1.41.0",
     "next": "14.0.3",
     "next-cloudinary": "^5.11.0",
+    "node-appwrite": "^11.1.0",
+    "payment-token-efi": "^2.1.0",
     "react": "^18",
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^18",
     "react-hook-form": "^7.49.0",
+    "sdk-typescript-apis-efi": "^1.0.2",
     "use-exit-intent": "^1.0.7",
     "zustand": "^4.4.7"
   },

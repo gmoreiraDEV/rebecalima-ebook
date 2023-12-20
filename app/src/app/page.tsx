@@ -16,6 +16,7 @@ import SaleComponent from "@/components/Sale";
 import ValueComponent from "@/components/Value";
 import ExitPopup from "@/components/ExitPopup";
 import { useExitPopupStore } from "@/stores/exitPopup";
+import Checkout from "@/components/Checkout";
 
 export default function Home() {
   const { setShowExitPopUp } = useExitPopupStore();
@@ -56,6 +57,7 @@ export default function Home() {
       <SaleComponent />
       <RebecaLimaComponent />
       <ValueComponent />
+      <Checkout />
       <ExitPopup />
       <CookieConsent
         location="bottom"
