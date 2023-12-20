@@ -1,7 +1,25 @@
 import { EBOOK_LINK } from "@/constants";
+import { usePathname } from "next/navigation";
+
 import { formatPrice } from "@/utils/price";
+import * as pixel from "@/lib/fpixel";
+import { gtag_report_conversion } from "@/lib/gpixel";
 
 export default function ValueComponent() {
+  const pathname = usePathname();
+
+  const origin =
+    typeof window !== "undefined" && window.location.origin
+      ? window.location.origin
+      : "";
+
+  const URL = `${origin}${pathname}` as Location | (string & Location);
+
+  const handleLink = () => {
+    pixel.event("InitiateCheckout");
+    gtag_report_conversion(URL);
+  };
+
   return (
     <section className="w-full flex justify-center items-center gap-12 relative">
       <div className="w-[90%] h-80 border-solid text-white bg-gradient-to-b from-brand-sky to-brand-ocean border-brand-sky border-2 rounded-lg flex flex-col justify-center items-center relative z-10">
@@ -14,6 +32,8 @@ export default function ValueComponent() {
             data-aos-delay="100"
             className="transition-all text-center bg-gradient-to-r from-brand-marsala to-brand-beige drop-shadow-md px-8 py-4 text-white font-bold rounded-lg relative overflow-hidden before:absolute before:h-full before:top-0 before:left-0 before:w-full before:content-[''] before:from-brand-beige before:to-brand-marsala before:bg-gradient-to-r before:opacity-0 before:-z-10 hover:before:opacity-100 hover:drop-shadow-lg"
             href={EBOOK_LINK}
+            target="_blank"
+            onClick={handleLink}
             id="cta"
           >
             QUERO COMPRAR AGORA

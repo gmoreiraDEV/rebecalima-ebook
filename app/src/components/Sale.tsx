@@ -1,8 +1,27 @@
 import { EBOOK_LINK } from "@/constants";
+import { usePathname } from "next/navigation";
+
 import { formatPrice } from "@/utils/price";
+import * as pixel from "@/lib/fpixel";
+import { gtag_report_conversion } from "@/lib/gpixel";
+
 import CloudImage from "./CloudImage";
 
 export default function SaleComponent() {
+  const pathname = usePathname();
+
+  const origin =
+    typeof window !== "undefined" && window.location.origin
+      ? window.location.origin
+      : "";
+
+  const URL = `${origin}${pathname}` as Location | (string & Location);
+
+  const handleLink = () => {
+    pixel.event("InitiateCheckout");
+    gtag_report_conversion(URL);
+  };
+
   return (
     <section className="w-full flex justify-center items-center flex-col md:flex-row gap-12 relative md:mt-36">
       <div className="z-10 text-white w-2/3 p-4 flex justify-center items-center  flex-col md:block md:p-unset md:w-1/4 ">
@@ -65,6 +84,8 @@ export default function SaleComponent() {
               data-aos="fade-up"
               data-aos-delay="500"
               href={EBOOK_LINK}
+              target="_blank"
+              onClick={handleLink}
               id="cta"
             >
               QUERO COMPRAR AGORA

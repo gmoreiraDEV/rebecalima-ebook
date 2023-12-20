@@ -20,6 +20,7 @@ export default function HeroComponent() {
     pixel.event("InitiateCheckout");
     gtag_report_conversion(URL);
   };
+
   return (
     <section className="bg-brand-pink w-full h-full flex flex-col-reverse items-center p-8 text-brand-white relative md:flex-row md:justify-center animate-fade-down animate-once animate-ease-out">
       <div className="flex flex-col items-center py-16 z-30 gap-4 md:w-1/2 md:items-start md:max-w-2xl">
